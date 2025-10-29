@@ -1,0 +1,204 @@
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+main {
+  flex: 1;
+}
+
+nav {
+  background-color: #222;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+nav a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+h1 {
+  margin: 0;
+  color: #333;
+  text-align: center;
+  padding: 70px 10px 10px 10px;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.producto {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.producto p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  display: block;
+  margin: 2px auto;
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 4px;
+}
+
+button:hover {
+  background-color: #246d46;
+}
+
+table {
+  width: 60%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+p {
+  text-align: center;
+}
+
+td {
+  color: #444;
+}
+
+#total {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Modal general */
+.modal {
+  display: none; /* oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* fondo oscuro */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Contenido del modal */
+.modal-contenido {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.modal-botones {
+  margin-top: 20px;
+}
+
+.modal-botones button {
+  margin: 0 10px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+#modal-si {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+}
+
+#modal-si:hover {
+  background-color: #246d46;
+}
+
+#modal-no {
+  background-color: #ccc;
+  color: black;
+  border: none;
+}
+
+#modal-no:hover {
+  background-color: #999;
+}
+
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+
+@media (max-width: 600px) {
+  .productos, table {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .producto {
+    width: 140px;
+    padding: 10px;
+  }
+
+  button {
+    padding: 6px 10px;
+  }
+
+  th, td {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  #total {
+    font-size: 16px;
+  }
+}

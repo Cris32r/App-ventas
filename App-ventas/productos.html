@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Style Urban</title>
+    <link rel="stylesheet" href="productos.css">
+    <script src="carrito.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html" class="activo">Productos</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+
+    <div class="contenido">
+        <h1>Nuestros productos</h1>
+        <p>Explora la colección de ropa disponible en la tienda.</p>
+
+        <div class="producto">
+            <img src="./imagenes/camisa.png" alt="Camisa">
+            <h3>Camisa</h3>
+            <p>$35.000</p>
+            <button onclick="agregarAlCarrito('Camisa', 35000)">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="./imagenes/pantalon.png" alt="Pantalón">
+            <h3>Pantalón</h3>
+            <p>$55.000</p>
+            <button onclick="agregarAlCarrito('Pantalón', 55000)">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="./imagenes/chaqueta.png" alt="Chaqueta">
+            <h3>Chaqueta</h3>
+            <p>$80.000</p>
+            <button onclick="agregarAlCarrito('Chaqueta', 80000)">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="./imagenes/saco.png" alt="Saco">
+            <h3>Saco</h3>
+            <p>$65.000</p>
+            <button onclick="agregarAlCarrito('Saco', 65000)">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="./imagenes/reloj.png" alt="Reloj">
+            <h3>Reloj</h3>
+            <p>$400.000</p>
+            <button onclick="agregarAlCarrito('reloj', 400000)">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="./imagenes/pantaloneta.png" alt="Pantaloneta">
+            <h3>Pantaloneta</h3>
+            <p>$30.000</p>
+            <button onclick="agregarAlCarrito('Pantaloneta', 30000)">Agregar al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="./imagenes/cadena.png" alt="Cadena">
+            <h3>Cadena</h3>
+            <p>$200.000</p>
+            <button onclick="agregarAlCarrito('Cadena', 200000)">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="./imagenes/gorra.png" alt="Gorra">
+            <h3>Gorra</h3>
+            <p>$60.000</p>
+            <button onclick="agregarAlCarrito('Gorra', 60000)">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="./imagenes/tenis.png" alt="tenis">
+            <h3>Tenis</h3>
+            <p>$300.000</p>
+            <button onclick="agregarAlCarrito('tenis', 300000)">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="./imagenes/boxer.png" alt="Ropa interior">
+            <h3>Boxer</h3>
+            <p>$15.000</p>
+            <button onclick="agregarAlCarrito('Boxer', 15000)">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="./imagenes/medias.png" alt="Medias">
+            <h3>Medias</h3>
+            <p>$7.000</p>
+            <button onclick="agregarAlCarrito('Medias', 7000)">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <div id="mensaje" class="notificacion"></div>
+
+    <footer>
+        <p>© 2025 Tienda style Urban | Hecho por Cristobal Ocampo</p>
+    </footer>
+
+</body>
+</html>
